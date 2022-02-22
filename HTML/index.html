@@ -69,7 +69,7 @@
         <hr />
 
         <h3>HTML Forms : </h3>
-        <form>
+        <form action="./submit-form.py" >
             <div>
                 <label>Full Name : </label>
                 <input type="text" placeholder="Enter you full name..." /> 
@@ -78,10 +78,100 @@
 
             <div>
                 <label>Email : </label>
-                <input type="text" placeholder="Enter you email..." />
+                <input type="email" placeholder="Enter you email..." />
             </div> <br />
+
+            <div>
+                <label>Password : </label>
+                <input type="password" placeholder="Enter you password..." />
+            </div> <br />
+
+            <div>
+                <label>Gender : </label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div> <br />
+
+            <div>
+                <label>DOB</label>
+                <input type="date">
+            </div> <br />
+
+            <div>
+                <label>Upload your updated resume (in .pdf OR .doc OR .docs) : </label>
+                <input type="file" accept=".pdf, .doc, .docx" >
+            </div> <br />
+
+            <div>
+                <label>How happy are you today ? </label>
+                <input type="range">
+            </div> <br />
+
+            <div>
+                <label>Feedback : </label>
+                <textarea cols="70" rows="10"></textarea>
+            </div> <br> <br>
+
+            <div>
+                <input type="submit" value="SUBMIT">
+            </div>
         </form>
 
-        <div style="height: 400px;"></div>
+        <hr>
+
+        <h3>Tables : </h3>
+        <table border="1" >
+            <thead>
+                <th>Emp Id</th>
+                <th>Emp Name</th>
+                <th>Emp Email</th>
+                <th>Emp Designation</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>EM00765</td>
+                    <td>John Doe</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE - II</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE - III</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Logan Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Tester</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Ben Thomas</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Java Developer</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h3>YouTube Video : </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aWzlQ2N6qqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr>
+        <h3>Audio : </h3>
+        <audio src="./assests/audio/audio_one.mp3" controls ></audio>
+
+        <hr>
+        <h3>Google Maps : </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11662.567701962462!2d78.38537572611773!3d17.496961492301736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1645500955757!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <hr> <hr>
+        <div> <b>2021, Innomatics Reserach Labs!</b> </div>
     </body>
 </html>
