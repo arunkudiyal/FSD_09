@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>My First HTML Doc.</title>
+        <!-- INTERNAL CSS -->
+        <!-- <style>
+            h1 {
+                color: green;
+            }
+        </style> -->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!-- INLINE CSS -->
+        <!-- <h1 style="color: navy;">Heading of the Document <span>By: Arun Kudiyal</span> </h1>  -->
+
+        <h1>Heading of the Document <span>By: Arun Kudiyal</span> </h1> 
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, tempore. Eaque <b>perferendis consequuntur</b> doloribus animi itaque eos architecto blanditiis. Est atque cum in, rerum distinctio ullam suscipit expedita culpa, ipsam pariatur quae quo porro, delectus itaque eligendi numquam repellat. <strong>Aperiam accusantium adipisci</strong> ea modi officia nihil fugiat dignissimos, magnam inventore!</p> SOME OTHER CONTENT
+
+        <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>. In consequatur nostrum, autem numquam voluptates iste rerum voluptas non obcaecati eos <u>corrupti tempore laborum placeat</u> quibusdam dolore nemo illum, accusamus ipsum et dolorem consectetur quidem cumque! Nostrum sunt saepe sequi aperiam mollitia quaerat omnis accusantium libero consectetur <i>asperiores quas</i> eius molestiae deleniti porro praesentium facere impedit dignissimos, eaque corporis sed ea!</p>
+
+        <hr />
+        <h3 class="first-h3">Links : </h3>
+        <a href="https://www.google.com" target="_blank" >click here to go to Google!</a>
+        <br /> <br />
+        <a href="./second.html">click here for Page - 2</a> <br /> <br />
+
+        <h3 class="first-h3">Images : </h3>
+        <img src="https://fujifilm-x.com/wp-content/uploads/2019/08/xc16-50mmf35-56-ois-2_sample-images03.jpg" alt="Sample Image - 1" />  <br /> <br />
+
+        <a href="https://www.facebook.com"> <img src="./assests/images/6105939280.jpg" > </a>
+
+        <hr />
+        <h3>Lists : </h3>
+        <h4> <u>Ordered List (ol) : </u> </h4>
+        <!-- Where order of the list items is neccessary -->
+        <ol type="i" >
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ol>
+
+        <h4> <u>Un-Ordered List (ul) : </u> </h4>
+        <!-- Where order of the list items is NOT neccessary - BULLET POINTERS -->
+        <ul >
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ul>
+
+        <hr />
+
+        <h3>HTML Forms : </h3>
+        <form action="./submit-form.py" >
+            <div>
+                <label>Full Name : </label>
+                <input type="text" placeholder="Enter you full name..." /> 
+            </div>
+            <br />
+
+            <div>
+                <label>Email : </label>
+                <input type="email" placeholder="Enter you email..." />
+            </div> <br />
+
+            <div>
+                <label>Password : </label>
+                <input type="password" placeholder="Enter you password..." />
+            </div> <br />
+
+            <div>
+                <label>Gender : </label>
+                <select>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div> <br />
+
+            <div>
+                <label>DOB</label>
+                <input type="date">
+            </div> <br />
+
+            <div>
+                <label>Upload your updated resume (in .pdf OR .doc OR .docs) : </label>
+                <input type="file" accept=".pdf, .doc, .docx" >
+            </div> <br />
+
+            <div>
+                <label>How happy are you today ? </label>
+                <input type="range">
+            </div> <br />
+
+            <div>
+                <label>Feedback : </label>
+                <textarea cols="70" rows="10"></textarea>
+            </div> <br> <br>
+
+            <div>
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+
+        <hr>
+
+        <h3>Tables : </h3>
+        <table border="1" >
+            <thead>
+                <th>Emp Id</th>
+                <th>Emp Name</th>
+                <th>Emp Email</th>
+                <th>Emp Designation</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>EM00765</td>
+                    <td>John Doe</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE - II</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE - III</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Logan Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Tester</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Ben Thomas</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Java Developer</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h3>YouTube Video : </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aWzlQ2N6qqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr>
+        <h3>Audio : </h3>
+        <audio src="./assests/audio/audio_one.mp3" controls ></audio>
+
+        <hr>
+        <h3>Google Maps : </h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11662.567701962462!2d78.38537572611773!3d17.496961492301736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1645500955757!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> <hr>
+
+        <h3>HTML Enties : </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta ab ipsum, nisi qui natus molestias doloribus at incidunt nihil numquam suscipit, rem dolorem sit itaque cum eaque sint fugiat velit nesciunt alias. &pi; Alias error sit est eius fuga asperiores omnis soluta nobis quas laborum? Tempore porro veritatis explicabo laborum, optio repudiandae aliquam magni, temporibus voluptate quod, sint minima voluptates.</p>
+        <hr> <hr>
+        <div> <b>2021, Innomatics Reserach Labs!</b> </div>
+
+        <script>
+            document.getElementById('first-h3')
+        </script>
+    </body>
+</html>

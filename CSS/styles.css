@@ -1,0 +1,16 @@
+/* EXTERNAL CSS */
+
+/* Element Selector */
+h3 {
+    color: purple;
+}
+
+/* ID Selector */
+#first-h3 {
+    color: pink;
+}
+
+/* Class Selector */
+.first-h3 {
+    color: maroon;
+}
