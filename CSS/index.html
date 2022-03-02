@@ -16,31 +16,34 @@
 
         <h1>Heading of the Document <span>By: Arun Kudiyal</span> </h1> 
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, tempore. Eaque <b>perferendis consequuntur</b> doloribus animi itaque eos architecto blanditiis. Est atque cum in, rerum distinctio ullam suscipit expedita culpa, ipsam pariatur quae quo porro, delectus itaque eligendi numquam repellat. <strong>Aperiam accusantium adipisci</strong> ea modi officia nihil fugiat dignissimos, magnam inventore!</p> SOME OTHER CONTENT
+        <p id="para-one" class="para"  >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, tempore. Eaque <b>perferendis consequuntur</b> doloribus animi itaque eos architecto blanditiis. Est atque cum in, rerum distinctio ullam suscipit expedita culpa, ipsam pariatur quae quo porro, delectus itaque eligendi numquam repellat. <strong>Aperiam accusantium adipisci</strong> ea modi officia nihil fugiat dignissimos, magnam inventore!</p> SOME OTHER CONTENT
 
         <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>. In consequatur nostrum, autem numquam voluptates iste rerum voluptas non obcaecati eos <u>corrupti tempore laborum placeat</u> quibusdam dolore nemo illum, accusamus ipsum et dolorem consectetur quidem cumque! Nostrum sunt saepe sequi aperiam mollitia quaerat omnis accusantium libero consectetur <i>asperiores quas</i> eius molestiae deleniti porro praesentium facere impedit dignissimos, eaque corporis sed ea!</p>
 
         <hr />
         <h3 class="first-h3">Links : </h3>
-        <a href="https://www.google.com" target="_blank" >click here to go to Google!</a>
+        <a id="link-one" href="https://www.google.com" target="_blank" >click here to go to Google!</a>
         <br /> <br />
-        <a href="./second.html">click here for Page - 2</a> <br /> <br />
+        <a id="link-two" href="../HTML/second.html">click here for Page - 2</a> <br /> <br />
+        <a id="link-three" href="https://www.facebook.com">click here for Page - 2</a> <br /> <br />
 
         <h3 class="first-h3">Images : </h3>
         <img src="https://fujifilm-x.com/wp-content/uploads/2019/08/xc16-50mmf35-56-ois-2_sample-images03.jpg" alt="Sample Image - 1" />  <br /> <br />
 
-        <a href="https://www.facebook.com"> <img src="./assests/images/6105939280.jpg" > </a>
+        <a href="https://www.facebook.com"> <img src="../HTML/assests/images/6105939280.jpg" > </a> <br /> <br>
+
+        <img src="../HTML/assests/images/sample-image-1.jpeg" alt="">
 
         <hr />
         <h3>Lists : </h3>
         <h4> <u>Ordered List (ol) : </u> </h4>
         <!-- Where order of the list items is neccessary -->
-        <ol type="i" >
-            <li>List Item - 1</li>
-            <li>List Item - 2</li>
-            <li>List Item - 3</li>
-            <li>List Item - 4</li>
-            <li>List Item - 5</li>
+        <ol id="ordered-list" type="i" >
+            <li class="ordered-list-items">List Item - 1</li>
+            <li class="ordered-list-items">List Item - 2</li>
+            <li class="ordered-list-items">List Item - 3</li>
+            <li class="ordered-list-items">List Item - 4</li>
+            <li class="ordered-list-items">List Item - 5</li>
         </ol>
 
         <h4> <u>Un-Ordered List (ul) : </u> </h4>
@@ -161,7 +164,7 @@
         <h3>HTML Enties : </h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dicta ab ipsum, nisi qui natus molestias doloribus at incidunt nihil numquam suscipit, rem dolorem sit itaque cum eaque sint fugiat velit nesciunt alias. &pi; Alias error sit est eius fuga asperiores omnis soluta nobis quas laborum? Tempore porro veritatis explicabo laborum, optio repudiandae aliquam magni, temporibus voluptate quod, sint minima voluptates.</p>
         <hr> <hr>
-        <div> <b>2021, Innomatics Reserach Labs!</b> </div>
+        <div> <b>2021, Innomatics Reserach Labs!</b> <br> <i>For more info email us at <a href="mailto:info@innomatics.in">Email Us</a> </i>  </div>
 
         <script>
             document.getElementById('first-h3')

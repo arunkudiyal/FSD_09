@@ -1,5 +1,7 @@
 /* EXTERNAL CSS */
 
+/* SELECTORS */
+
 /* Element Selector */
 h3 {
     color: purple;
@@ -14,3 +16,68 @@ h3 {
 .first-h3 {
     color: maroon;
 }
+
+/* CSS SPECIFICITY */
+#para {
+    color: purple;
+}
+
+.para {
+    color: green;
+}
+
+
+/* Pseudo Selectors (:) --> Natural Actions of any element */
+h1:hover {
+    color: darkcyan;
+}
+
+#link-one:active {
+    color: white;
+}
+
+#link-two:visited {
+    color: red;
+}
+
+#link-three:visited {
+    color: magenta;
+}
+
+/* Children Pseudo Selectors */
+/* #ordered-list:first-child {  ----> THIS IS NOT APPLICABLE
+
+} */
+
+.ordered-list-items:first-child {
+    color: blue;
+}
+
+.ordered-list-items:last-child {
+    color: green;
+}
+
+.ordered-list-items:nth-child(3) {
+    color: peru;
+}
+
+
+/* Atrribute Selectors - [] - ID and Class Selector is a type of Attribute Selector */
+
+/* Starts with --> ^
+Ends with --> $
+Contains --> * */
+
+img[src^="https://"] {
+    border: 10px solid black;
+}
+
+img[src$="jpg"] {
+    border: 5px solid red;
+}
+
+img[src*="images"] {
+    border: 10px double royalblue;
+}
+
+/* COLORS AND GRADIENTS */
