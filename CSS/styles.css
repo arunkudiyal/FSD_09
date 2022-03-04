@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
 /* EXTERNAL CSS */
 
 /* SELECTORS */
+body {
+    background: linear-gradient(to bottom, aqua, #5A5BF3);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1, h3 {
+    font-weight: 500;
+}
 
 /* Element Selector */
 h3 {
@@ -24,6 +34,8 @@ h3 {
 
 .para {
     color: green;
+    font-weight: 100;
+    line-height: 27px;
 }
 
 
@@ -70,6 +82,7 @@ Contains --> * */
 
 img[src^="https://"] {
     border: 10px solid black;
+    height: 400px;
 }
 
 img[src$="jpg"] {
@@ -78,6 +91,61 @@ img[src$="jpg"] {
 
 img[src*="images"] {
     border: 10px double royalblue;
+    width: 70%;
 }
 
 /* COLORS AND GRADIENTS */
+/* colors --> name, HEX-Code (000000 - ffffff) , RGB(), RGBA() --> Abs (0,1) */
+#other {
+    color: rgb(138, 226, 255);
+}
+
+#container-one {
+    height: 400px;
+    width: 70%;
+    /* background-color: red; */
+    /* background-color: rgba(120, 97, 250, 0.6); */
+
+    /* background: linear-gradient(to right, black, white); */
+    /* background: linear-gradient(to bottom right, black, white); */
+    background: linear-gradient(360deg, black, white);
+}
+
+#btn1 {
+    background-color: rgba(0, 0, 0);
+    color: white
+}
+
+#btn1:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#container-two {
+    height: 100vh;
+    width: 70vw;
+
+    background-color: red;
+
+    /* background: radial-gradient(circle, red,black, white, green, yellow, blue); */
+}
+
+#example-cont {
+    height: 50vh;
+    width: 70vw;
+
+    background-color: navy;
+}
+
+/* UNIT OF MEASUREMENTS - Absolute & Relative */
+
+#para-two {
+    font-size: 16px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* TEXTS AND FONTS */
+
+/* BOX MODELS */
