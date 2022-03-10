@@ -201,3 +201,80 @@ p {
     margin: 10px;
     line-height: 50px;
 }
+
+/* NavBar using FlexBoxes */
+#logo {
+    border: 0;
+    height: auto;
+    width: 15%;
+}
+
+nav {
+    line-height: 75px;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: red;
+    font-weight: 500;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+}
+
+#contact-us {
+    padding: 10px;
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+#contact-us:hover {
+    background-color: red;
+}
+
+/* MEDIA QUERIES */
+
+/* @media(screen resolution condition) */
+/* condition -> max-width -> Desktop
+            -> min width -> Mobile */
+@media(min-width: 450px) {
+    .nav-links li a {
+        font-size: 25px;
+    }
+
+    #contact-us {
+        padding: 25px;
+    }
+
+    #logo {
+        width: 10%;
+    }
+}
+
+@media (min-width: 450px) {
+    body {
+        background: black;
+        color: white;
+    }
+}
+
+/* @media only screen and (min-width:450px) and (max-width: 920px) {
+    body {
+        background: black;
+        color: white;
+    }
+} */
