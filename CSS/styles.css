@@ -251,7 +251,26 @@ header {
 /* @media(screen resolution condition) */
 /* condition -> max-width -> Desktop
             -> min width -> Mobile */
-@media(min-width: 450px) {
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+    img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 920px) {
+    img {
+      display: block;
+    }
+    p h1, h2, a {
+        display: none;
+    }
+}
+  
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+
+/* @media only screen and (min-width: 420px) {
     .nav-links li a {
         font-size: 25px;
     }
@@ -263,18 +282,8 @@ header {
     #logo {
         width: 10%;
     }
-}
 
-@media (min-width: 450px) {
-    body {
-        background: black;
-        color: white;
-    }
-}
-
-/* @media only screen and (min-width:450px) and (max-width: 920px) {
-    body {
-        background: black;
-        color: white;
+    img {
+        display: none;
     }
 } */
